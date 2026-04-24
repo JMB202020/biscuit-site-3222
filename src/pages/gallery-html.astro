@@ -1,0 +1,284 @@
+---
+import '../styles/site.css';
+const phone1 = '0151 677 8161';
+const phone2 = '07970 662 371';
+const email = 'janet.meadows@ntlworld.com';
+const address = '45 Beryl Road, Noctorum, Prenton, Merseyside, CH43 9RS';
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Lingfield Luxury Cattery, Noctorum, Wirral</title>
+  <meta name="description" content="Photo gallery of Lingfield Luxury Cattery in Noctorum, Wirral. FAB listed cattery with heated chalets, large play runs and spotlessly clean facilities." />
+  <link rel="icon" href="/favicon.ico" />
+</head>
+<body>
+
+  <!-- Preview banner -->
+  <div style="background:white;color:#374151;padding:8px 16px;text-align:center;font-size:13px;position:sticky;top:0;z-index:50;border-bottom:1px solid #E5E7EB;box-shadow:0 1px 3px rgba(0,0,0,0.05)"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap"><span>Preview redesign for <strong style="color:#111827">Lingfield luxury cattery</strong></span><a href="https://biscuitweb.co.uk/activate?id=3222&amp;name=Lingfield%20luxury%20cattery" style="display:inline-flex;align-items:center;padding:4px 14px;background:#111827;color:white;font-weight:700;font-size:11px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
+
+  <!-- Navigation -->
+  <nav class="bg-white border-b border-[var(--color-border)] sticky top-[41px] z-40">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
+      <a href="/3222" class="font-display font-800 text-xl text-[var(--color-brand-accent)] leading-tight">
+        Lingfield<br class="hidden sm:block" /><span class="text-[var(--color-ink)] text-sm font-700 tracking-wide"> Luxury Cattery</span>
+      </a>
+      <!-- Desktop nav -->
+      <ul class="hidden md:flex items-center gap-6 text-sm font-600">
+        <li><a href="/3222" class="text-[var(--color-ink)] hover:text-[var(--color-brand-accent)] transition-colors">Home</a></li>
+        <li><a href="/3222/gallery-html" class="text-[var(--color-brand-accent)] font-700">Gallery</a></li>
+        <li><a href="/3222/terms-conditions-html" class="text-[var(--color-ink)] hover:text-[var(--color-brand-accent)] transition-colors">Terms &amp; Conditions</a></li>
+        <li>
+          <a href={`tel:${phone1.replace(/\s/g,'')}`} class="bg-[var(--color-brand-accent)] text-white px-4 py-2 rounded-full text-sm font-700 hover:bg-[var(--color-brand-accent-deep)] transition-colors">
+            Call Us
+          </a>
+        </li>
+      </ul>
+      <!-- Mobile hamburger -->
+      <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Open menu">
+        <span class="block w-6 h-0.5 bg-[var(--color-ink)]"></span>
+        <span class="block w-6 h-0.5 bg-[var(--color-ink)]"></span>
+        <span class="block w-6 h-0.5 bg-[var(--color-ink)]"></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-[var(--color-border)] px-4 pb-4">
+      <ul class="flex flex-col gap-3 pt-3 text-sm font-600">
+        <li><a href="/3222" class="text-[var(--color-ink)]">Home</a></li>
+        <li><a href="/3222/gallery-html" class="text-[var(--color-brand-accent)] font-700">Gallery</a></li>
+        <li><a href="/3222/terms-conditions-html" class="text-[var(--color-ink)]">Terms &amp; Conditions</a></li>
+        <li><a href={`tel:${phone1.replace(/\s/g,'')}`} class="text-[var(--color-brand-accent)] font-700">{phone1}</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[50vh] flex items-center overflow-hidden">
+    <img
+      src="/3222/images/luxury-cattery.jpg"
+      alt="Lingfield Luxury Cattery gallery"
+      width="800"
+      height="600"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 py-16 text-center">
+      <span class="inline-block bg-[var(--color-brand-accent)] text-white text-sm font-700 px-4 py-1.5 rounded-full mb-4">
+        📍 Noctorum, Wirral
+      </span>
+      <h1 class="text-4xl md:text-5xl font-800 text-white mb-4">
+        Our Gallery
+      </h1>
+      <p class="text-lg text-white/90 max-w-xl mx-auto">
+        Lingfield Luxury Cattery, Noctorum, Wirral, Merseyside. FAB listed — probably the nicest on the Wirral!
+      </p>
+    </div>
+  </section>
+
+  <!-- Intro content -->
+  <section class="py-12 bg-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <p class="text-[var(--color-ink-soft)] text-lg mb-4 leading-relaxed">
+        We are a FAB Listed Cattery — free from noisy kennels. You will just LOVE it here!
+      </p>
+      <p class="text-[var(--color-ink-soft)] mb-4 leading-relaxed">
+        We always encourage you to settle your cat in on arrival, and to make sure that you leave happy and content. On collection we like you to be involved in surprising your cat too. This is a very special reunion, and lovely for us to see.
+      </p>
+      <p class="text-[var(--color-ink-soft)] mb-4 leading-relaxed">
+        Your pets, like ours, are part of the family, and should be respected as such. We are a family of experienced cat lovers, and pride ourselves on our endless commitment, cleanliness and general love for animals.
+      </p>
+      <div class="inline-block bg-[var(--color-cream)] border border-[var(--color-border)] text-[var(--color-brand-accent)] font-700 px-6 py-3 rounded-full text-sm mt-2">
+        Please book early for Christmas &amp; New Year!
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured images -->
+  <section class="pb-4 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-4 mb-4">
+        <div class="aspect-video overflow-hidden rounded-xl">
+          <img src="/3222/images/cattery-wirral-2.jpg" alt="Lingfield Luxury Cattery Wirral" width="600" height="400" loading="lazy" class="w-full h-full object-cover" />
+        </div>
+        <div class="aspect-video overflow-hidden rounded-xl">
+          <img src="/3222/images/cattery.jpg" alt="Cat at Lingfield cattery" width="600" height="400" loading="lazy" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery grid -->
+  <section class="py-8 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-800 text-[var(--color-ink)] mb-6 text-center">Photo Gallery</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+        <div class="aspect-square overflow-hidden rounded-xl">
+          <img src="/3222/images/gallery-html-lingfield-luxury-cattery-noctorum-wirral-2.jpg" alt="Cattery Wirral photo" width="300" height="300" loading="lazy" class="w-full h-full object-cover" />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl">
+          <img src="/3222/images/gallery-html-lingfield-luxury-cattery-noctorum-wirral-3.jpg" alt="Luxury cattery photo" width="300" height="300" loading="lazy" class="w-full h-full object-cover" />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl">
+          <img src="/3222/images/cattery-wirral-3.jpg" alt="Cattery chalet Wirral" width="300" height="300" loading="lazy" class="w-full h-full object-cover" />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl">
+          <img src="/3222/images/gallery-html-lingfield-luxury-cattery-noctorum-wirral-4.jpg" alt="Cat boarding Noctorum" width="300" height="300" loading="lazy" class="w-full h-full object-cover" />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl">
+          <img src="/3222/images/gallery-html-lingfield-luxury-cattery-noctorum-wirral-5.jpg" alt="Heated cat chalet" width="300" height="300" loading="lazy" class="w-full h-full object-cover" />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl">
+          <img src="/3222/images/gallery-html-lingfield-luxury-cattery-noctorum-wirral-6.jpg" alt="Cat enjoying cattery" width="300" height="300" loading="lazy" class="w-full h-full object-cover" />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl">
+          <img src="/3222/images/gallery-html-lingfield-luxury-cattery-noctorum-wirral-7.jpg" alt="Cattery facilities Wirral" width="300" height="300" loading="lazy" class="w-full h-full object-cover" />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl">
+          <img src="/3222/images/gallery-html-lingfield-luxury-cattery-noctorum-wirral-8.jpg" alt="Cat boarding Merseyside" width="300" height="300" loading="lazy" class="w-full h-full object-cover" />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl">
+          <img src="/3222/images/gallery-html-lingfield-luxury-cattery-noctorum-wirral-9.jpg" alt="Cat relaxing at cattery" width="300" height="300" loading="lazy" class="w-full h-full object-cover" />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl">
+          <img src="/3222/images/home-20.jpg" alt="Happy cat at Lingfield" width="300" height="300" loading="lazy" class="w-full h-full object-cover" />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl">
+          <img src="/3222/images/home-22.jpg" alt="Cattery Wirral" width="300" height="300" loading="lazy" class="w-full h-full object-cover" />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl">
+          <img src="/3222/images/home-23.jpg" alt="Luxury cat boarding" width="300" height="300" loading="lazy" class="w-full h-full object-cover" />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl">
+          <img src="/3222/images/home-24.jpg" alt="Cat in chalet" width="300" height="300" loading="lazy" class="w-full h-full object-cover" />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl">
+          <img src="/3222/images/home-25.jpg" alt="Cat boarding Wirral" width="300" height="300" loading="lazy" class="w-full h-full object-cover" />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl">
+          <img src="/3222/images/home-26.jpg" alt="Cat at Noctorum cattery" width="300" height="300" loading="lazy" class="w-full h-full object-cover" />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl">
+          <img src="/3222/images/home-27.jpg" alt="Lingfield cattery cat" width="300" height="300" loading="lazy" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features list -->
+  <section class="py-14 bg-[var(--color-brand-bg)]">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-8">
+        <p class="text-[var(--color-brand-accent)] font-700 text-sm mb-2">Feline Advisory Bureau Listed!</p>
+        <h2 class="text-2xl font-800 text-[var(--color-ink)]">Everything Your Cat Deserves</h2>
+      </div>
+      <ul class="grid sm:grid-cols-2 gap-4">
+        <li class="flex items-center gap-3 bg-white rounded-xl px-5 py-4 border border-[var(--color-border)]">
+          <span class="text-[var(--color-brand-accent)] font-700 text-lg">✓</span>
+          <span class="text-[var(--color-ink-soft)]">Spotlessly clean</span>
+        </li>
+        <li class="flex items-center gap-3 bg-white rounded-xl px-5 py-4 border border-[var(--color-border)]">
+          <span class="text-[var(--color-brand-accent)] font-700 text-lg">✓</span>
+          <span class="text-[var(--color-ink-soft)]">Heated chalets</span>
+        </li>
+        <li class="flex items-center gap-3 bg-white rounded-xl px-5 py-4 border border-[var(--color-border)]">
+          <span class="text-[var(--color-brand-accent)] font-700 text-lg">✓</span>
+          <span class="text-[var(--color-ink-soft)]">Large play runs</span>
+        </li>
+        <li class="flex items-center gap-3 bg-white rounded-xl px-5 py-4 border border-[var(--color-border)]">
+          <span class="text-[var(--color-brand-accent)] font-700 text-lg">✓</span>
+          <span class="text-[var(--color-ink-soft)]">Sneeze barriers</span>
+        </li>
+        <li class="flex items-center gap-3 bg-white rounded-xl px-5 py-4 border border-[var(--color-border)]">
+          <span class="text-[var(--color-brand-accent)] font-700 text-lg">✓</span>
+          <span class="text-[var(--color-ink-soft)]">Lined &amp; insulated</span>
+        </li>
+        <li class="flex items-center gap-3 bg-white rounded-xl px-5 py-4 border border-[var(--color-border)]">
+          <span class="text-[var(--color-brand-accent)] font-700 text-lg">✓</span>
+          <span class="text-[var(--color-ink-soft)]">Alarmed</span>
+        </li>
+        <li class="flex items-center gap-3 bg-white rounded-xl px-5 py-4 border border-[var(--color-border)]">
+          <span class="text-[var(--color-brand-accent)] font-700 text-lg">✓</span>
+          <span class="text-[var(--color-ink-soft)]">Security lighting</span>
+        </li>
+        <li class="flex items-center gap-3 bg-white rounded-xl px-5 py-4 border border-[var(--color-border)]">
+          <span class="text-[var(--color-brand-accent)] font-700 text-lg">✓</span>
+          <span class="text-[var(--color-ink-soft)]">All dietary needs catered for</span>
+        </li>
+        <li class="flex items-center gap-3 bg-white rounded-xl px-5 py-4 border border-[var(--color-border)]">
+          <span class="text-[var(--color-brand-accent)] font-700 text-lg">✓</span>
+          <span class="text-[var(--color-ink-soft)]">Vet on call 24 hours</span>
+        </li>
+        <li class="flex items-center gap-3 bg-white rounded-xl px-5 py-4 border border-[var(--color-border)]">
+          <span class="text-[var(--color-brand-accent)] font-700 text-lg">✓</span>
+          <span class="text-[var(--color-ink-soft)]">Fully licensed &amp; insured</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-12 bg-[var(--color-brand-accent)] text-white text-center">
+    <div class="max-w-2xl mx-auto px-4">
+      <h2 class="text-2xl font-800 mb-3">Like What You See?</h2>
+      <p class="text-white/90 mb-6">Get in touch to check availability and book your cat's stay.</p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href={`tel:${phone1.replace(/\s/g,'')}`} class="bg-white text-[var(--color-brand-accent)] font-700 px-8 py-3 rounded-full hover:bg-[var(--color-cream)] transition-colors">
+          {phone1}
+        </a>
+        <a href={`mailto:${email}`} class="bg-white/20 border border-white/40 font-700 px-8 py-3 rounded-full hover:bg-white/30 transition-colors">
+          {email}
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[var(--color-ink)] text-white py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h3 class="font-800 text-lg mb-3 text-white">Lingfield Luxury Cattery</h3>
+          <address class="not-italic text-white/70 text-sm space-y-1">
+            <p>{address}</p>
+            <p class="mt-2"><a href={`tel:${phone1.replace(/\s/g,'')}`} class="hover:text-white transition-colors">{phone1}</a></p>
+            <p><a href={`tel:${phone2.replace(/\s/g,'')}`} class="hover:text-white transition-colors">{phone2}</a></p>
+            <p><a href={`mailto:${email}`} class="hover:text-white transition-colors">{email}</a></p>
+          </address>
+        </div>
+        <div>
+          <h3 class="font-800 text-lg mb-3 text-white">Pages</h3>
+          <ul class="space-y-2 text-white/70 text-sm">
+            <li><a href="/3222" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="/3222/gallery-html" class="hover:text-white transition-colors">Gallery</a></li>
+            <li><a href="/3222/terms-conditions-html" class="hover:text-white transition-colors">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-800 text-lg mb-3 text-white">Opening Hours</h3>
+          <ul class="space-y-1 text-white/70 text-sm">
+            <li>Mon to Sat: 9 am to 12 pm &amp; 6 pm to 7 pm</li>
+            <li>Sun: 10 am to 12 pm &amp; 6 pm to 7 pm</li>
+          </ul>
+          <p class="mt-4 text-white/70 text-sm">Members of International Cat Care</p>
+        </div>
+      </div>
+      <div class="border-t border-white/20 pt-6 text-center text-white/50 text-sm">
+        <p>&copy; {new Date().getFullYear()} Lingfield Luxury Cattery. All rights reserved.</p>
+        <p class="mt-1">This is a sample site built by <a href="https://biscuitweb.co.uk" class="underline hover:text-white/80">Biscuit Web</a> to showcase our work.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn?.addEventListener('click', () => {
+      menu?.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>

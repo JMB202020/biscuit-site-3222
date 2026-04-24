@@ -1,0 +1,278 @@
+---
+import '../styles/site.css';
+const phone1 = '0151 677 8161';
+const phone2 = '07970 662 371';
+const email = 'janet.meadows@ntlworld.com';
+const address = '45 Beryl Road, Noctorum, Prenton, Merseyside, CH43 9RS';
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms &amp; Conditions | Lingfield Luxury Cattery, Noctorum, Wirral</title>
+  <meta name="description" content="Terms and conditions for Lingfield Luxury Cattery, Noctorum, Wirral. Read our booking policies, health requirements and payment information." />
+  <link rel="icon" href="/favicon.ico" />
+</head>
+<body>
+
+  <!-- Preview banner -->
+  <div style="background:white;color:#374151;padding:8px 16px;text-align:center;font-size:13px;position:sticky;top:0;z-index:50;border-bottom:1px solid #E5E7EB;box-shadow:0 1px 3px rgba(0,0,0,0.05)"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap"><span>Preview redesign for <strong style="color:#111827">Lingfield luxury cattery</strong></span><a href="https://biscuitweb.co.uk/activate?id=3222&amp;name=Lingfield%20luxury%20cattery" style="display:inline-flex;align-items:center;padding:4px 14px;background:#111827;color:white;font-weight:700;font-size:11px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
+
+  <!-- Navigation -->
+  <nav class="bg-white border-b border-[var(--color-border)] sticky top-[41px] z-40">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
+      <a href="/3222" class="font-display font-800 text-xl text-[var(--color-brand-accent)] leading-tight">
+        Lingfield<br class="hidden sm:block" /><span class="text-[var(--color-ink)] text-sm font-700 tracking-wide"> Luxury Cattery</span>
+      </a>
+      <!-- Desktop nav -->
+      <ul class="hidden md:flex items-center gap-6 text-sm font-600">
+        <li><a href="/3222" class="text-[var(--color-ink)] hover:text-[var(--color-brand-accent)] transition-colors">Home</a></li>
+        <li><a href="/3222/gallery-html" class="text-[var(--color-ink)] hover:text-[var(--color-brand-accent)] transition-colors">Gallery</a></li>
+        <li><a href="/3222/terms-conditions-html" class="text-[var(--color-brand-accent)] font-700">Terms &amp; Conditions</a></li>
+        <li>
+          <a href={`tel:${phone1.replace(/\s/g,'')}`} class="bg-[var(--color-brand-accent)] text-white px-4 py-2 rounded-full text-sm font-700 hover:bg-[var(--color-brand-accent-deep)] transition-colors">
+            Call Us
+          </a>
+        </li>
+      </ul>
+      <!-- Mobile hamburger -->
+      <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Open menu">
+        <span class="block w-6 h-0.5 bg-[var(--color-ink)]"></span>
+        <span class="block w-6 h-0.5 bg-[var(--color-ink)]"></span>
+        <span class="block w-6 h-0.5 bg-[var(--color-ink)]"></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-[var(--color-border)] px-4 pb-4">
+      <ul class="flex flex-col gap-3 pt-3 text-sm font-600">
+        <li><a href="/3222" class="text-[var(--color-ink)]">Home</a></li>
+        <li><a href="/3222/gallery-html" class="text-[var(--color-ink)]">Gallery</a></li>
+        <li><a href="/3222/terms-conditions-html" class="text-[var(--color-brand-accent)] font-700">Terms &amp; Conditions</a></li>
+        <li><a href={`tel:${phone1.replace(/\s/g,'')}`} class="text-[var(--color-brand-accent)] font-700">{phone1}</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[40vh] flex items-center overflow-hidden">
+    <img
+      src="/3222/images/cattery-wirral-4.jpg"
+      alt="Lingfield Luxury Cattery terms and conditions"
+      width="600"
+      height="600"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 py-16 text-center">
+      <span class="inline-block bg-[var(--color-brand-accent)] text-white text-sm font-700 px-4 py-1.5 rounded-full mb-4">
+        📍 Noctorum, Wirral
+      </span>
+      <h1 class="text-3xl md:text-5xl font-800 text-white mb-3">
+        Terms &amp; Conditions
+      </h1>
+      <p class="text-white/90 text-lg">Lingfield Luxury Cattery</p>
+    </div>
+  </section>
+
+  <!-- Terms content -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Terms list -->
+        <div class="md:col-span-2">
+          <p class="text-[var(--color-ink-soft)] mb-8">
+            If you have any questions or concerns, please do not hesitate to contact us. We will always do our very best to make sure that you and your pet are happy.
+          </p>
+          <ol class="space-y-6">
+            <li class="flex gap-4">
+              <span class="flex-shrink-0 bg-[var(--color-brand-accent)] text-white w-7 h-7 rounded-full flex items-center justify-center text-sm font-700">1</span>
+              <p class="text-[var(--color-ink-soft)] leading-relaxed">All fees for boarding and veterinary care are due at time of departure. Cats may not leave our Cattery until paid in full. Cash only. We charge a daily rate, this includes the day of arrival and departure.</p>
+            </li>
+            <li class="flex gap-4">
+              <span class="flex-shrink-0 bg-[var(--color-brand-accent)] text-white w-7 h-7 rounded-full flex items-center justify-center text-sm font-700">2</span>
+              <p class="text-[var(--color-ink-soft)] leading-relaxed">A cat that appears to be unwell at the time of arrival may be refused admission. No liability will be accepted by Lingfield Luxury Cattery for disruption to your travel plans caused by such an event. Please seek advice from your own vet in advance of your booking if you have any concerns about your cat's health.</p>
+            </li>
+            <li class="flex gap-4">
+              <span class="flex-shrink-0 bg-[var(--color-brand-accent)] text-white w-7 h-7 rounded-full flex items-center justify-center text-sm font-700">3</span>
+              <p class="text-[var(--color-ink-soft)] leading-relaxed">Please arrive at the arranged time.</p>
+            </li>
+            <li class="flex gap-4">
+              <span class="flex-shrink-0 bg-[var(--color-brand-accent)] text-white w-7 h-7 rounded-full flex items-center justify-center text-sm font-700">4</span>
+              <p class="text-[var(--color-ink-soft)] leading-relaxed">If you expect your return to be delayed, please let me know as soon as possible and I will extend your booking if I can.</p>
+            </li>
+            <li class="flex gap-4">
+              <span class="flex-shrink-0 bg-[var(--color-brand-accent)] text-white w-7 h-7 rounded-full flex items-center justify-center text-sm font-700">5</span>
+              <p class="text-[var(--color-ink-soft)] leading-relaxed">It is rare for a cat to fall ill whilst in the Cattery, but sudden unforeseen changes in health can occur, and we will not be held responsible. A veterinary surgeon will be consulted promptly if necessary. Any emergency call-out charges plus treatment charges will be added to your final account, as will travel costs to and from vets.</p>
+            </li>
+            <li class="flex gap-4">
+              <span class="flex-shrink-0 bg-[var(--color-brand-accent)] text-white w-7 h-7 rounded-full flex items-center justify-center text-sm font-700">6</span>
+              <p class="text-[var(--color-ink-soft)] leading-relaxed">Lingfield Luxury Cattery reserves the right to re-home any cats not collected within 7 days of an agreed departure date.</p>
+            </li>
+            <li class="flex gap-4">
+              <span class="flex-shrink-0 bg-[var(--color-brand-accent)] text-white w-7 h-7 rounded-full flex items-center justify-center text-sm font-700">7</span>
+              <p class="text-[var(--color-ink-soft)] leading-relaxed">Lingfield Cattery is fully insured and licensed.</p>
+            </li>
+            <li class="flex gap-4">
+              <span class="flex-shrink-0 bg-[var(--color-brand-accent)] text-white w-7 h-7 rounded-full flex items-center justify-center text-sm font-700">8</span>
+              <p class="text-[var(--color-ink-soft)] leading-relaxed">All toms 6 months and over must be neutered.</p>
+            </li>
+            <li class="flex gap-4">
+              <span class="flex-shrink-0 bg-[var(--color-brand-accent)] text-white w-7 h-7 rounded-full flex items-center justify-center text-sm font-700">9</span>
+              <p class="text-[var(--color-ink-soft)] leading-relaxed">All cats must have a current vaccination card against Cat Flu and Infectious Enteritis. This card will be kept by us during your cat's stay and must be provided at every visit.</p>
+            </li>
+            <li class="flex gap-4">
+              <span class="flex-shrink-0 bg-[var(--color-brand-accent)] text-white w-7 h-7 rounded-full flex items-center justify-center text-sm font-700">10</span>
+              <p class="text-[var(--color-ink-soft)] leading-relaxed">Unlike most Catteries, we do not believe in charging you extra for special dates such as Easter, Christmas etc. We do not have minimum stay charges, nor do we charge if you cancel. If you fail to cancel a booking you will be charged for the period you booked. If you return earlier than the time booked, full charges will still apply.</p>
+            </li>
+            <li class="flex gap-4">
+              <span class="flex-shrink-0 bg-[var(--color-brand-accent)] text-white w-7 h-7 rounded-full flex items-center justify-center text-sm font-700">11</span>
+              <p class="text-[var(--color-ink-soft)] leading-relaxed">Any cat found to have worms or fleas will be treated accordingly and the cost of any medication will be added to your final bill.</p>
+            </li>
+            <li class="flex gap-4">
+              <span class="flex-shrink-0 bg-[var(--color-brand-accent)] text-white w-7 h-7 rounded-full flex items-center justify-center text-sm font-700">12</span>
+              <p class="text-[var(--color-ink-soft)] leading-relaxed">Prices are reviewed on 1st April every year.</p>
+            </li>
+            <li class="flex gap-4">
+              <span class="flex-shrink-0 bg-[var(--color-brand-accent)] text-white w-7 h-7 rounded-full flex items-center justify-center text-sm font-700">13</span>
+              <p class="text-[var(--color-ink-soft)] leading-relaxed">If you wish that cats from the same family be put into separate chalets, then they will be charged full rate per cat.</p>
+            </li>
+            <li class="flex gap-4">
+              <span class="flex-shrink-0 bg-[var(--color-brand-accent)] text-white w-7 h-7 rounded-full flex items-center justify-center text-sm font-700">14</span>
+              <p class="text-[var(--color-ink-soft)] leading-relaxed">You must inform us of any changes to your cat's health, if different from previous visits.</p>
+            </li>
+            <li class="flex gap-4">
+              <span class="flex-shrink-0 bg-[var(--color-brand-accent)] text-white w-7 h-7 rounded-full flex items-center justify-center text-sm font-700">15</span>
+              <p class="text-[var(--color-ink-soft)] leading-relaxed">All food and biscuits are provided unless your cat is on a special diet (e.g. Royal Canin, Hills etc.).</p>
+            </li>
+            <li class="flex gap-4">
+              <span class="flex-shrink-0 bg-[var(--color-brand-accent)] text-white w-7 h-7 rounded-full flex items-center justify-center text-sm font-700">16</span>
+              <p class="text-[var(--color-ink-soft)] leading-relaxed">Cats must be brought in a secure carrier. We will not be held responsible if a cat escapes due to faulty ones.</p>
+            </li>
+            <li class="flex gap-4">
+              <span class="flex-shrink-0 bg-[var(--color-brand-accent)] text-white w-7 h-7 rounded-full flex items-center justify-center text-sm font-700">17</span>
+              <p class="text-[var(--color-ink-soft)] leading-relaxed">We do not accept diabetic cats.</p>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="space-y-6">
+          <div class="aspect-square overflow-hidden rounded-xl">
+            <img src="/3222/images/cattery-wirral-5.jpg" alt="Cattery Wirral" width="300" height="300" loading="lazy" class="w-full h-full object-cover" />
+          </div>
+          <div class="bg-[var(--color-cream)] rounded-xl p-5 border border-[var(--color-border)]">
+            <h3 class="font-800 text-[var(--color-ink)] mb-3">Contact Us</h3>
+            <address class="not-italic text-sm text-[var(--color-ink-soft)] space-y-2">
+              <p>{address}</p>
+              <p><a href={`tel:${phone1.replace(/\s/g,'')}`} class="text-[var(--color-brand-accent)] font-700 hover:underline">Tel: {phone1}</a></p>
+              <p><a href={`tel:${phone2.replace(/\s/g,'')}`} class="text-[var(--color-brand-accent)] font-700 hover:underline">Mobile: {phone2}</a></p>
+              <p><a href={`mailto:${email}`} class="text-[var(--color-brand-accent)] font-700 hover:underline break-all">{email}</a></p>
+            </address>
+          </div>
+          <div class="bg-[var(--color-cream)] rounded-xl p-5 border border-[var(--color-border)]">
+            <h3 class="font-800 text-[var(--color-ink)] mb-3">Opening Hours</h3>
+            <ul class="text-sm text-[var(--color-ink-soft)] space-y-1">
+              <li><strong class="text-[var(--color-ink)]">Mon to Sat:</strong> 9 am to 12 pm &amp; 6 pm to 7 pm</li>
+              <li><strong class="text-[var(--color-ink)]">Sunday:</strong> 10 am to 12 pm &amp; 6 pm to 7 pm</li>
+            </ul>
+          </div>
+          <div class="bg-[var(--color-cream)] rounded-xl p-5 border border-[var(--color-border)]">
+            <h3 class="font-800 text-[var(--color-ink)] mb-2">Prices</h3>
+            <ul class="text-sm text-[var(--color-ink-soft)] space-y-1">
+              <li>1 cat: <strong class="text-[var(--color-ink)]">£13.00</strong> per night</li>
+              <li>2 cats: <strong class="text-[var(--color-ink)]">£19.00</strong> per night</li>
+              <li>3 cats: <strong class="text-[var(--color-ink)]">£22.00</strong> per night</li>
+              <li>4 cats: <strong class="text-[var(--color-ink)]">£25.00</strong> per night</li>
+            </ul>
+            <p class="text-xs text-[var(--color-ink-soft)] mt-2">Cash only or Bank Transfer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section class="py-14 bg-[var(--color-brand-bg)]" id="contact">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-2xl font-800 text-[var(--color-ink)] mb-2 text-center">Contact Details</h2>
+      <p class="text-center text-[var(--color-ink-soft)] mb-8">
+        {address} | Tel <a href={`tel:${phone1.replace(/\s/g,'')}`} class="text-[var(--color-brand-accent)] hover:underline font-700">{phone1}</a> | Mobile <a href={`tel:${phone2.replace(/\s/g,'')}`} class="text-[var(--color-brand-accent)] hover:underline font-700">{phone2}</a>
+      </p>
+      <div class="max-w-xl mx-auto">
+        <h3 class="text-xl font-800 text-[var(--color-ink)] mb-5 text-center">Contact Form</h3>
+        <div class="bg-white rounded-2xl p-8 border border-[var(--color-border)]">
+          <form action="https://formspree.io/f/mwvaaojq" method="POST" class="space-y-4">
+            <div>
+              <label class="block text-sm font-700 text-[var(--color-ink)] mb-1">Your Name</label>
+              <input type="text" name="name" required class="w-full border border-[var(--color-border)] rounded-lg px-4 py-2.5 text-[var(--color-ink)] bg-white focus:outline-none focus:border-[var(--color-brand-accent)]" />
+            </div>
+            <div>
+              <label class="block text-sm font-700 text-[var(--color-ink)] mb-1">Email Address</label>
+              <input type="email" name="email" required class="w-full border border-[var(--color-border)] rounded-lg px-4 py-2.5 text-[var(--color-ink)] bg-white focus:outline-none focus:border-[var(--color-brand-accent)]" />
+            </div>
+            <div>
+              <label class="block text-sm font-700 text-[var(--color-ink)] mb-1">Phone Number</label>
+              <input type="tel" name="phone" class="w-full border border-[var(--color-border)] rounded-lg px-4 py-2.5 text-[var(--color-ink)] bg-white focus:outline-none focus:border-[var(--color-brand-accent)]" />
+            </div>
+            <div>
+              <label class="block text-sm font-700 text-[var(--color-ink)] mb-1">Your Question or Message</label>
+              <textarea name="message" rows="4" required class="w-full border border-[var(--color-border)] rounded-lg px-4 py-2.5 text-[var(--color-ink)] bg-white focus:outline-none focus:border-[var(--color-brand-accent)] resize-none"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-[var(--color-brand-accent)] text-white font-700 py-3 rounded-full hover:bg-[var(--color-brand-accent-deep)] transition-colors">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[var(--color-ink)] text-white py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h3 class="font-800 text-lg mb-3 text-white">Lingfield Luxury Cattery</h3>
+          <address class="not-italic text-white/70 text-sm space-y-1">
+            <p>{address}</p>
+            <p class="mt-2"><a href={`tel:${phone1.replace(/\s/g,'')}`} class="hover:text-white transition-colors">{phone1}</a></p>
+            <p><a href={`tel:${phone2.replace(/\s/g,'')}`} class="hover:text-white transition-colors">{phone2}</a></p>
+            <p><a href={`mailto:${email}`} class="hover:text-white transition-colors">{email}</a></p>
+          </address>
+        </div>
+        <div>
+          <h3 class="font-800 text-lg mb-3 text-white">Pages</h3>
+          <ul class="space-y-2 text-white/70 text-sm">
+            <li><a href="/3222" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="/3222/gallery-html" class="hover:text-white transition-colors">Gallery</a></li>
+            <li><a href="/3222/terms-conditions-html" class="hover:text-white transition-colors">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-800 text-lg mb-3 text-white">Opening Hours</h3>
+          <ul class="space-y-1 text-white/70 text-sm">
+            <li>Mon to Sat: 9 am to 12 pm &amp; 6 pm to 7 pm</li>
+            <li>Sun: 10 am to 12 pm &amp; 6 pm to 7 pm</li>
+          </ul>
+          <p class="mt-4 text-white/70 text-sm">Members of International Cat Care</p>
+        </div>
+      </div>
+      <div class="border-t border-white/20 pt-6 text-center text-white/50 text-sm">
+        <p>&copy; {new Date().getFullYear()} Lingfield Luxury Cattery. All rights reserved.</p>
+        <p class="mt-1">This is a sample site built by <a href="https://biscuitweb.co.uk" class="underline hover:text-white/80">Biscuit Web</a> to showcase our work.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn?.addEventListener('click', () => {
+      menu?.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
